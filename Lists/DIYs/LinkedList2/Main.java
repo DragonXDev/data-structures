@@ -1,3 +1,5 @@
+package Lists.DIYs.LinkedList2;
+
 public class Main {
     public static void main(String[] args) {
 MySLinkedList<Integer> myList = new MySLinkedList<Integer>();
