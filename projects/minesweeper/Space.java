@@ -1,74 +1,75 @@
+package Projects.minesweeper;
+
 public class Space {
     private boolean hasMine;
     private boolean isCovered;
     private int numMines;
     private boolean hasFlag;
 
-
-    public Space(){
+    public Space() {
         hasMine = false;
         isCovered = true;
         numMines = 0;
         hasFlag = false;
     }
-    public void setHasMine(boolean mine){
+
+    public void setHasMine(boolean mine) {
         hasMine = mine;
     }
 
-    public boolean getHasMine(){
+    public boolean getHasMine() {
         return hasMine;
     }
 
-    public void setIsCovered(boolean covered){
+    public void setIsCovered(boolean covered) {
         isCovered = covered;
     }
 
-    public boolean getIsCovered(){
+    public boolean getIsCovered() {
         return isCovered;
     }
 
-    public void setNumMines(int mines){
+    public void setNumMines(int mines) {
         numMines = mines;
     }
 
-    public int getNumMines(){
+    public int getNumMines() {
         return numMines;
     }
 
-    public void setHasFlag(boolean flag){
+    public void setHasFlag(boolean flag) {
         hasFlag = flag;
     }
 
-    public boolean getHasFlag(){
+    public boolean getHasFlag() {
         return hasFlag;
     }
 
-    public String toString(){
-        if(hasFlag && isCovered){
+    public String toString() {
+        if (hasFlag && isCovered) {
             return Color.CYAN + ">" + Color.RESET;
         }
-        if(isCovered){
+        if (isCovered) {
             return ".";
         }
-        if(hasMine){
+        if (hasMine) {
             return Color.BOLD + Color.RED + "*" + Color.RESET;
         }
-        if(numMines==0){
+        if (numMines == 0) {
             return " ";
         }
-        return Color.NUM[numMines-1] + numMines + Color.RESET;
-
+        return Color.NUM[numMines - 1] + numMines + Color.RESET;
 
     }
 
-    public String showAll(){
-        if(hasFlag && isCovered){
+    public String showAll() {
+        if (hasFlag && isCovered) {
             return Color.CYAN + ">" + Color.RESET;
         }
-        if(hasMine){
+        if (hasMine) {
             return Color.BOLD + Color.RED + "*" + Color.RESET;
         }
-        if(numMines==0){
+        if (numMines == 0) {
             return " ";
         }
         return Color.NUM[2] + numMines + Color.RESET;

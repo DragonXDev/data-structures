@@ -1,3 +1,5 @@
+package Projects.minesweeper;
+
 import java.util.Scanner;
 import java.util.Random;
 
