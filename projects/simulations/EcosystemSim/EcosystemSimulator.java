@@ -1,4 +1,4 @@
-package projects.simulations.EcosystemSim;
+package Projects.simulations.EcosystemSim;
 
 import java.util.Random;
 
