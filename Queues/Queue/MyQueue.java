@@ -6,7 +6,7 @@ public class MyQueue<T> {
     private Node<T> dummy;
     private int size;
 
-    public MyQueue(){
+    public MyQueue() {
         dummy = new Node<T>(null);
         dummy.setNext(null);
         dummy.setPrev(null);
@@ -15,8 +15,8 @@ public class MyQueue<T> {
         size = 0;
     }
 
-    public void enqueue(T data){
-        Node newNode = new Node<T>(data);
+    public void enqueue(T data) {
+        Node<T> newNode = new Node<T>(data);
         tail.setNext(newNode);
         newNode.setPrev(tail);
         tail = newNode;
@@ -42,19 +42,18 @@ public class MyQueue<T> {
         return returnNode.getData();
     }
 
-
-    public T peek(){
-        if(size!=0){
+    public T peek() {
+        if (size != 0) {
             return head.getNext().getData();
         }
         return null;
     }
 
-    public int size(){
+    public int size() {
         return size;
     }
 
-    public boolean isEmpty(){
-        return (size==0);
+    public boolean isEmpty() {
+        return (size == 0);
     }
 }
