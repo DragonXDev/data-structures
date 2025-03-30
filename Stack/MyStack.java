@@ -6,7 +6,7 @@ public class MyStack<T> {
     private Node<T> dummy;
     private int size;
 
-    public MyStack(){
+    public MyStack() {
         dummy = new Node<T>(null);
         dummy.setNext(null);
         dummy.setPrev(null);
@@ -15,37 +15,36 @@ public class MyStack<T> {
         size = 0;
     }
 
-    public void push(T data){
-        Node newNode = new Node<T>(data);
+    public void push(T data) {
+        Node<T> newNode = new Node<T>(data);
         tail.setNext(newNode);
         newNode.setPrev(tail);
         tail = newNode;
         size++;
     }
 
-    public T pop(){
-        if (size!=0){
+    public T pop() {
+        if (size != 0) {
             Node<T> oldTail = tail;
             oldTail.getPrev().setNext(null);
             tail = oldTail.getPrev();
             oldTail.setPrev(null);
             size--;
             return oldTail.getData();
-        }
-        else{
+        } else {
             return null;
         }
     }
 
-    public T peek(){
+    public T peek() {
         return tail.getData();
     }
 
-    public int size(){
+    public int size() {
         return size;
     }
 
-    public boolean isEmpty(){
-        return (size==0);
+    public boolean isEmpty() {
+        return (size == 0);
     }
 }
