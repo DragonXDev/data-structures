@@ -1,17 +1,17 @@
 # Data Structures and Algorithms Repository
 
-This repository contains my implementations of various data structures and algorithms in Java. Its a resource for learning and understanding fundamental concepts in data structures and algorithms, + complete code for the ***DSA(H) class @ VCS***.
+This repository contains my implementations of various data structures and algorithms in Java. Its a resource for learning and understanding fundamental concepts in data structures and algorithms, + complete code for the **_DSA(H) class @ VCS_**.
 
 ## Topics Covered
 
 The repository includes implementations of:
 
-- Arrays and Linked Lists  
-- Stacks and Queues  
-- HashMaps and HashSets  
-- Trees (Binary Trees, BSTs, Heaps)  
-- Graphs (BFS, DFS, etc.)  
-- Sorting Algorithms  
+- Arrays and Linked Lists
+- Stacks and Queues
+- HashMaps and HashSets
+- Trees (Binary Trees, BSTs, Heaps)
+- Graphs (BFS, DFS, etc.)
+- Sorting Algorithms
 - Dynamic Programming
 
 ## How to Use
