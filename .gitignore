@@ -1,0 +1,26 @@
+# macOS system files
+.DS_Store
+
+# Node modules
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# VSCode settings
+.vscode/
+
+# Java build files
+*.class
+*.jar
+*.war
+*.ear
+target/
+
+# Environment files
+.env
+
+# OS trash
+.Trashes
